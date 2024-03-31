@@ -1,4 +1,5 @@
-export { default as ArrowProp } from "./arrow.svg";
+export { default as ArrowBlackProp } from "./arrow.svg";
+export { default as ArrowWhiteProp } from "./arrow-white.svg";
 export { default as BoostExposureProp } from "./boost-exposure.svg";
 export { default as CheckProp } from "./check.svg";
 export { default as CustomDomainProp } from "./custom-domain.svg";
