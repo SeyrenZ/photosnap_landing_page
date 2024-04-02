@@ -11,6 +11,11 @@ const config: Config = {
       backgroundImage: {
         createShare: "url('/create-and-share.jpg')",
         beautifulStories: "url('/beautiful-stories.jpg')",
+        designedForEveryone: "url('/designed-for-everyone.jpg')",
+        theMountains: "url('/mountains.jpg')",
+        sunsetCity: "url('/cityscapes.jpg')",
+        daysVoyage: "url('/18-days-voyage.jpg')",
+        architecturals: "url('/architecturals.jpg')",
       },
     },
   },
