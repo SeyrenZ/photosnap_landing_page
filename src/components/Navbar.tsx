@@ -22,8 +22,39 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full h-auto bg-white">
-      <div className="w-full max-w-[1440px] mx-auto flex items-center justify-between px-6 md:px-[39px] lg:px-[165px] py-7">
+    <div className="w-full h-auto fixed">
+      {isMenuOpen && (
+        <div className="fixed inset-0 bg-black opacity-40 z-30"></div>
+      )}
+      <div className="md:hidden block">
+        <div
+          className={`absolute z-40 w-full h-[253px] px-[33px] bg-white sm:hidden transition duration-500 ease-in-out ${
+            isMenuOpen ? "translate-y-[27%]" : "translate-y-[-80%]"
+          } flex flex-col items-center justify-center gap-y-5`}
+        >
+          <div className="flex flex-col items-center  gap-y-[20px] ">
+            {links.map((link) => (
+              <Link
+                key={link.name}
+                href={link.url}
+                className="text-[15px] font-extrabold uppercase tracking-widest"
+              >
+                {link.name}
+              </Link>
+            ))}
+          </div>
+          <div className="w-full h-[1px] bg-[#979797] " />
+          <Link
+            href="#"
+            className="w-full h-[48px] bg-black flex items-center justify-center"
+          >
+            <div className="text-sm font-semibold text-white tracking-widest">
+              GET AN INVITE
+            </div>
+          </Link>
+        </div>
+      </div>
+      <div className="w-full max-w-[1440px] mx-auto px-6 md:px-[39px] lg:px-[165px] py-7 bg-white flex items-center justify-between relative z-50">
         <LogoProp />
         <div className="block sm:hidden">
           {isMenuOpen ? (
