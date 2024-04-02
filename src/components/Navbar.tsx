@@ -22,13 +22,13 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full h-auto fixed">
+    <div className="w-full h-auto bg-white fixed">
       {isMenuOpen && (
-        <div className="fixed inset-0 bg-black opacity-40 z-30"></div>
+        <div className="fixed inset-0 bg-black opacity-40 z-30 sm:hidden block"></div>
       )}
       <div className="md:hidden block">
         <div
-          className={`absolute z-40 w-full h-[253px] px-[33px] bg-white sm:hidden transition duration-500 ease-in-out ${
+          className={`absolute z-40 w-full h-[253px] px-[33px] bg-white sm:hidden transition duration-300 ease-in-out ${
             isMenuOpen ? "translate-y-[27%]" : "translate-y-[-80%]"
           } flex flex-col items-center justify-center gap-y-5`}
         >
@@ -37,7 +37,7 @@ const Navbar = () => {
               <Link
                 key={link.name}
                 href={link.url}
-                className="text-[15px] font-extrabold uppercase tracking-widest"
+                className="text-md hover:text-zinc-300 font-extrabold uppercase tracking-widest transition ease-in-out duration-300"
               >
                 {link.name}
               </Link>
@@ -46,16 +46,16 @@ const Navbar = () => {
           <div className="w-full h-[1px] bg-[#979797] " />
           <Link
             href="#"
-            className="w-full h-[48px] bg-black flex items-center justify-center"
+            className="w-full h-[48px] bg-black hover:bg-zinc-300 text-sm font-semibold text-white hover:text-black tracking-widest flex items-center justify-center transition ease-in-out duration-300"
           >
-            <div className="text-sm font-semibold text-white tracking-widest">
-              GET AN INVITE
-            </div>
+            GET AN INVITE
           </Link>
         </div>
       </div>
       <div className="w-full max-w-[1440px] mx-auto px-6 md:px-[39px] lg:px-[165px] py-7 bg-white flex items-center justify-between relative z-50">
-        <LogoProp />
+        <Link href="#">
+          <LogoProp />
+        </Link>
         <div className="block sm:hidden">
           {isMenuOpen ? (
             <CloseProp onClick={handleMenu} />
@@ -69,7 +69,7 @@ const Navbar = () => {
               <Link
                 key={link.name}
                 href={link.url}
-                className="text-xs font-bold uppercase tracking-widest"
+                className="text-xs hover:text-zinc-300 font-bold uppercase tracking-widest transition ease-in-out duration-300"
               >
                 {link.name}
               </Link>
@@ -80,11 +80,9 @@ const Navbar = () => {
         <div className="hidden sm:block">
           <Link
             href="#"
-            className="w-[158px] h-[40px] bg-black flex items-center justify-center"
+            className="w-[158px] h-[40px] bg-black hover:bg-zinc-300 text-xs text-white font-semibold tracking-widest hover:text-black flex items-center justify-center transition ease-in-out duration-300"
           >
-            <div className="text-xs text-white font-semibold tracking-widest">
-              GET AN INVITE
-            </div>
+            GET AN INVITE
           </Link>
         </div>
       </div>

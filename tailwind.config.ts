@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       backgroundImage: {
         createShare: "url('/create-and-share.jpg')",
+        beautifulStories: "url('/beautiful-stories.jpg')",
       },
     },
   },
