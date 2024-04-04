@@ -1,7 +1,10 @@
-import Header from "@/components/Header";
-import HomeContent1 from "@/components/HomeContent1";
-import HomeContent2 from "@/components/HomeContent2";
-import HomeContent3 from "@/components/HomeContent3";
+import {
+  Header,
+  HomeContent1,
+  HomeContent2,
+  HomeContent3,
+  Capability,
+} from "@/components";
 
 export default function Home() {
   return (
@@ -10,6 +13,7 @@ export default function Home() {
       <HomeContent1 />
       <HomeContent2 />
       <HomeContent3 />
+      <Capability />
     </main>
   );
 }

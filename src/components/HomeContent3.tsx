@@ -34,8 +34,8 @@ const HomeContent3 = () => {
   ];
 
   return (
-    <div className="w-full h-auto">
-      <div className="w-full max-w-[1440px] mx-auto h-auto grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 relative">
+    <div className="w-full h-auto relative z-10">
+      <div className="w-full max-w-[1440px] bg-white mx-auto h-auto grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 relative">
         <div className="absolute z-10 w-full h-[6px] bottom-0 bg-white lg:block hidden" />
         {stories.map((story, index) => (
           <div
@@ -47,9 +47,9 @@ const HomeContent3 = () => {
               width={362}
               height={500}
               alt=""
-              className="absolute z-10 w-full h-full object-center object-cover"
+              className="absolute w-full h-full object-center object-cover"
             />
-            <div className="w-full h-[360px] p-10 bg-gradient-to-t from-black to-transparent flex flex-col items-start justify-end gap-y-5 relative z-20">
+            <div className="w-full h-[360px] p-10 bg-gradient-to-t from-black to-transparent flex flex-col items-start justify-end gap-y-5 relative z-10">
               <div className="flex flex-col">
                 <div className="text-white text-lg font-semibold">
                   {story.title}

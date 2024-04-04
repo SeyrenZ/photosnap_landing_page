@@ -22,9 +22,12 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full h-auto bg-white fixed">
+    <div className="w-full h-auto bg-white fixed z-50">
       {isMenuOpen && (
-        <div className="fixed inset-0 bg-black opacity-40 z-30 sm:hidden block"></div>
+        <div
+          className="fixed inset-0 bg-black opacity-40 z-40 sm:hidden block"
+          onClick={handleMenu}
+        ></div>
       )}
       <div className="md:hidden block">
         <div
@@ -52,7 +55,7 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
-      <div className="w-full max-w-[1440px] mx-auto px-6 md:px-[39px] lg:px-[165px] py-7 bg-white flex items-center justify-between relative z-50">
+      <div className=" w-full max-w-[1440px] mx-auto px-6 md:px-[39px] lg:px-[165px] py-7 bg-white flex items-center justify-between relative z-50">
         <Link
           href="#"
           className="hover:scale-110 transition ease-in-out duration-300"

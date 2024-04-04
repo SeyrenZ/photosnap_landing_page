@@ -5,7 +5,7 @@ import { ArrowBlackProp, ArrowWhiteProp } from "./svgs";
 
 const HomeContent1 = () => {
   return (
-    <div className="w-full md:h-[650px] h-auto max-auto">
+    <div className="w-full md:h-[650px] h-auto ">
       <div className="w-full h-full max-w-[1440px] mx-auto flex md:flex-row flex-col items-center">
         <div className="w-full max-w-[830px] md:min-h-[650px] min-h-[294px] bg-beautifulStories bg-cover bg-center" />
         <div className="w-full lg:max-w-[610px] md:min-w-[495px] h-full md:p-0 px-[33px] py-20 flex items-center justify-center bg-white">
