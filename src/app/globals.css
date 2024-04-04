@@ -5,8 +5,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('/landscape.jpg') ;
+  background-image: url('/landscape-4.jpg') ;
   background-size: cover;
   background-repeat: no-repeat;
-  backdrop-filter: blur(5px);
+ 
 }

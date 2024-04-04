@@ -34,7 +34,7 @@ const HomeContent3 = () => {
   ];
 
   return (
-    <div className="w-full h-auto relative z-10">
+    <div className="w-full h-auto">
       <div className="w-full max-w-[1440px] bg-white mx-auto h-auto grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 relative">
         <div className="absolute z-10 w-full h-[6px] bottom-0 bg-white lg:block hidden" />
         {stories.map((story, index) => (

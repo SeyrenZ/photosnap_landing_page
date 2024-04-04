@@ -22,7 +22,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full h-auto bg-white fixed z-50">
+    <nav className="w-full h-auto bg-white fixed z-50">
       {isMenuOpen && (
         <div
           className="fixed inset-0 bg-black opacity-40 z-40 sm:hidden block"
@@ -92,7 +92,7 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 
