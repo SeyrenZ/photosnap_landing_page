@@ -53,7 +53,10 @@ const Navbar = () => {
         </div>
       </div>
       <div className="w-full max-w-[1440px] mx-auto px-6 md:px-[39px] lg:px-[165px] py-7 bg-white flex items-center justify-between relative z-50">
-        <Link href="#">
+        <Link
+          href="#"
+          className="hover:scale-110 transition ease-in-out duration-300"
+        >
           <LogoProp />
         </Link>
         <div className="block sm:hidden">

@@ -35,18 +35,19 @@ const HomeContent3 = () => {
 
   return (
     <div className="w-full h-auto">
-      <div className="w-full max-w-[1440px] mx-auto h-auto grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1">
+      <div className="w-full max-w-[1440px] mx-auto h-auto grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 relative">
+        <div className="absolute z-10 w-full h-[6px] bottom-0 bg-white lg:block hidden" />
         {stories.map((story, index) => (
           <div
             key={index}
-            className="w-full sm:h-[500px] h-[375px] relative flex items-end justify-start"
+            className="relative z-0 w-full sm:h-[500px] h-[375px] lg:pb-[6px] pb-0 flex items-end justify-start lg:hover:translate-y-[-5%] transition ease-in-out duration-300 bg-gradient-to-r from-[#FFC593] via-[#BC7198] to-[#5A77FF] "
           >
             <Image
               src={story.image}
               width={362}
               height={500}
               alt=""
-              className="w-full h-full absolute object-center object-cover z-10"
+              className="absolute z-10 w-full h-full object-center object-cover"
             />
             <div className="w-full h-[360px] p-10 bg-gradient-to-t from-black to-transparent flex flex-col items-start justify-end gap-y-5 relative z-20">
               <div className="flex flex-col">
