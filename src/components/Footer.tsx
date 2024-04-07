@@ -29,8 +29,8 @@ const Footer = () => {
     { name: "Pricing", url: "#" },
   ];
   return (
-    <footer className="w-full h-auto lg:p-20 px-[39px] py-16 bg-black">
-      <div className="w-full sm:h-[122px] h-auto max-w-[1440px] mx-auto flex sm:flex-row flex-col sm:justify-between sm:items-start items-center gap-y-32">
+    <footer className="w-full h-auto py-16 bg-black">
+      <div className="w-full sm:h-[122px] h-auto lg:px-20 px-[39px] max-w-[1440px] mx-auto flex sm:flex-row flex-col sm:justify-between sm:items-start items-center gap-y-32">
         <div className="w-auto h-full flex sm:flex-row flex-col relative sm:gap-x-[110px] sm:gap-y-0 gap-y-24">
           <div className="w-[170px] h-full flex flex-col sm:items-start items-center">
             <LogoWhiteProp />
