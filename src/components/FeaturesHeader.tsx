@@ -14,8 +14,10 @@ const FeaturesHeader = () => {
             </div>
             <div className="md:text-md md:leading-normal text-[15px] leading-[25px] text-zinc-400">
               We make sure all of our features are designed to be
-              <br /> loved by every aspiring and even professional
-              <br /> photograpers who wanted to share their stories.
+              <br className="sm:block hidden" /> loved by every aspiring and
+              even professional
+              <br className="sm:block hidden" /> photograpers who wanted to
+              share their stories.
             </div>
           </div>
         </div>
