@@ -13,7 +13,7 @@ import CapabilityComponent from "./CapabilityComponent";
 const FeaturesContent = () => {
   return (
     <div className="w-full h-auto">
-      <div className="w-full max-w-[1440px] py-[120px] mx-auto bg-white flex items-center justify-center">
+      <div className="w-full max-w-[1440px] py-[120px] lg:px-0 sm:px-5 mx-auto bg-white flex items-center justify-center">
         <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-x-[30px] gap-y-16">
           <CapabilityComponent
             icon={<ResponsiveProp />}
