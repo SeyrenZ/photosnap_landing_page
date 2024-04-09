@@ -1,5 +1,4 @@
-import StoriesContent from "@/components/StoriesContent";
-import StoriesHeader from "@/components/StoriesHeader";
+import { StoriesContent, StoriesHeader } from "@/components";
 import React from "react";
 
 const page = () => {
