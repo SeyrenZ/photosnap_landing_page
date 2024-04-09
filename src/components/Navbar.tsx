@@ -11,7 +11,7 @@ const Navbar = () => {
 
   const links: Link[] = [
     { name: "Stories", url: "/stories" },
-    { name: "Features", url: "#" },
+    { name: "Features", url: "/features" },
     { name: "Pricing", url: "#" },
   ];
 
@@ -41,6 +41,7 @@ const Navbar = () => {
                 key={link.name}
                 href={link.url}
                 className="text-md hover:text-zinc-300 font-extrabold uppercase tracking-widest transition ease-in-out duration-300"
+                onClick={handleMenu}
               >
                 {link.name}
               </Link>
@@ -58,7 +59,8 @@ const Navbar = () => {
       <div className=" w-full max-w-[1440px] mx-auto px-6 md:px-[39px] lg:px-[165px] py-7 bg-white flex items-center justify-between relative z-50">
         <Link
           href="/"
-          className="hover:scale-110 transition ease-in-out duration-300"
+          className="sm:hover:scale-110 transition ease-in-out duration-300"
+          onClick={() => setIsMenuOpen(false)}
         >
           <LogoProp />
         </Link>
