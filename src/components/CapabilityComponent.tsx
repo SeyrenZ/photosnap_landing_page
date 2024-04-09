@@ -10,7 +10,7 @@ const CapabilityComponent: React.FC<CapabilityProps> = ({
   desc,
 }) => {
   return (
-    <div className="w-full max-w-[350px] h-[236px] flex flex-col items-center gap-y-12">
+    <div className="sm:w-[350px] w-[320px] h-[236px] flex flex-col items-center gap-y-12">
       <div className="flex items-center justify-center h-[71px]">{icon}</div>
       <div className="flex flex-col items-center gap-y-4">
         <div className="text-lg font-bold">{title}</div>
