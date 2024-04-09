@@ -38,9 +38,10 @@ const HomeContent3 = () => {
       <div className="w-full max-w-[1440px] bg-white mx-auto h-auto grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 relative">
         <div className="absolute z-10 w-full h-[6px] bottom-0 bg-white lg:block hidden" />
         {stories.map((story, index) => (
-          <div
+          <Link
+            href="#"
             key={index}
-            className="relative z-0 w-full sm:h-[500px] h-[375px] lg:pb-[6px] pb-0 flex items-end justify-start lg:hover:translate-y-[-5%] transition ease-in-out duration-300 bg-gradient-to-r from-[#FFC593] via-[#BC7198] to-[#5A77FF] "
+            className="relative z-0 w-full sm:h-[500px] h-[375px] lg:pb-[6px] pb-0 flex items-end justify-start lg:hover:translate-y-[-5%] transition ease-in-out duration-300 bg-gradient-to-r from-[#FFC593] via-[#BC7198] to-[#5A77FF] hover-link"
           >
             <Image
               src={story.image}
@@ -57,15 +58,14 @@ const HomeContent3 = () => {
                 <div className="text-white text-xs">by {story.author}</div>
               </div>
               <div className="w-full h-[1px] bg-[#979797]" />
-              <Link
-                href="#"
-                className="w-full text-xs text-white font-semibold tracking-widest hover:underline flex items-center justify-between gap-x-5"
-              >
-                READ STORIES
+              <div className="mt-2 w-auto text-xs text-white font-semibold tracking-widest flex items-center justify-between gap-x-4">
+                <span className="link link-underline link-underline-white">
+                  READ STORIES
+                </span>
                 <ArrowWhiteProp />
-              </Link>
+              </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

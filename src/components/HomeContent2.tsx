@@ -22,9 +22,11 @@ const HomeContent2 = () => {
             </div>
             <Link
               href="#"
-              className="mt-8 text-xs text-black font-semibold tracking-widest hover:underline flex items-center gap-x-5"
+              className="mt-8 text-xs text-black font-semibold tracking-widest flex items-center gap-x-5 hover-link"
             >
-              VISIT THE STORIES
+              <span className="link link-underline link-underline-black">
+                VIEW THE STORIES
+              </span>
               <ArrowBlackProp />
             </Link>
           </div>

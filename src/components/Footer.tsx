@@ -85,9 +85,11 @@ const Footer = () => {
         <div className="w-auto h-full flex flex-col sm:items-end items-center justify-between sm:gap-y-0 gap-y-10">
           <Link
             href="#"
-            className="text-xs text-white font-semibold tracking-widest hover:underline flex items-center gap-x-5"
+            className="text-xs text-white font-semibold tracking-widest flex items-center gap-x-5 hover-link"
           >
-            GET AN INVITE
+            <span className="link link-underline link-underline-white">
+              GET AN INVITE
+            </span>
             <ArrowWhiteProp />
           </Link>
           <div className="text-zinc-500 text-[15px]">

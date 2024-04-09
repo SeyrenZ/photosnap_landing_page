@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { ArrowWhiteProp } from "./svgs";
 
-const Header = () => {
+const HomeHeader = () => {
   return (
     <div className="w-full md:h-[650px] h-auto">
       <div className="w-full h-full max-w-[1440px] mx-auto flex md:flex-row flex-col items-center">
@@ -28,9 +28,11 @@ const Header = () => {
             </div>
             <Link
               href="#"
-              className="mt-8 text-xs text-white font-semibold tracking-widest hover:underline flex items-center gap-x-5"
+              className="mt-8 text-xs text-white font-semibold tracking-widest flex items-center gap-x-5 hover-link"
             >
-              GET AN INVITE
+              <span className="link link-underline link-underline-white  group-hover:text-red-500">
+                GET AN INVITE
+              </span>
               <ArrowWhiteProp />
             </Link>
           </div>
@@ -41,4 +43,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HomeHeader;

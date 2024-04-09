@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
+        StoriesBackground: "url('/moon-of-appalacia.jpg')",
         createShare: "url('/create-and-share.jpg')",
         beautifulStories: "url('/beautiful-stories.jpg')",
         designedForEveryone: "url('/designed-for-everyone.jpg')",
