@@ -3,6 +3,7 @@ export { default as StoriesHeader } from "./StoriesHeader";
 export { default as StoriesContent } from "./StoriesContent";
 export { default as FeaturesHeader } from "./FeaturesHeader";
 export { default as FeaturesContent } from "./FeaturesContent";
+export { default as FeaturesBanner } from "./FeaturesBanner";
 export { default as HomeContent1 } from "./HomeContent1";
 export { default as HomeContent2 } from "./HomeContent2";
 export { default as HomeContent3 } from "./HomeContent3";
