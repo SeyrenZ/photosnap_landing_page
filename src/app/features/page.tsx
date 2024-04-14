@@ -5,7 +5,7 @@ import React from "react";
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-const Page = () => {
+const Home = () => {
   useEffect(() => {
     Aos.init();
   }, []);
@@ -18,4 +18,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default Home;

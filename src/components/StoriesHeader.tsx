@@ -19,7 +19,7 @@ const StoriesHeader = () => {
         <StoriesHeaderProps
           className={`absolute left-0 ${
             isHovered ? "opacity-100" : "opacity-0"
-          } transition ease-in-out duration-700`}
+          } transition ease-in-out duration-700 md:block hidden`}
         />
         <div className="w-full sm:h-[650px] h-[317px] lg:px-[112px] px-[39px] bg-StoriesBackground bg-cover bg-no-repeat bg-center flex item-center">
           <div

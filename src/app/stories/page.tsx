@@ -1,7 +1,7 @@
 import { StoriesContent, StoriesHeader } from "@/components";
 import React from "react";
 
-const Page = () => {
+const Home = () => {
   return (
     <div className="pt-[72px]">
       <StoriesHeader />
@@ -10,4 +10,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default Home;
