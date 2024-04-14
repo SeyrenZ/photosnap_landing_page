@@ -40,18 +40,27 @@ const StoriesHeader = () => {
           </div>
         </div>
         <div className="w-full h-[495px] px-[29px] bg-black flex sm:hidden flex-col items-start justify-center gap-y-5 ">
-          <div className="sm:text-sm text-xs font-bold text-white tracking-widest">{`LAST MONTH'S FEATURED STORY`}</div>
-          <div className="sm:text-[40px] sm:leading-[48px] text-[32px] leading-[40px] text-white font-bold tracking-widest">
+          <div
+            data-aos="fade-right"
+            className="sm:text-sm text-xs font-bold text-white tracking-widest"
+          >{`LAST MONTH'S FEATURED STORY`}</div>
+          <div
+            data-aos="fade-right"
+            className="sm:text-[40px] sm:leading-[48px] text-[32px] leading-[40px] text-white font-bold tracking-widest"
+          >
             HAZY FULL
             <br /> MOON OF
             <br />
             APPALACHIA
           </div>
-          <div className="flex gap-x-3 sm:text-sm text-[13px] text-zinc-400">
+          <div
+            data-aos="fade-right"
+            className="flex gap-x-3 sm:text-sm text-[13px] text-zinc-400"
+          >
             <div>March 2nd 2020</div>
             <span className="text-white">by John Appleseed</span>
           </div>
-          <div className="text-sm text-zinc-400">
+          <div data-aos="fade-right" className="text-sm text-zinc-400">
             The dissected plateau area, while not actually made up of geological
             mountains, is popularly called "mountains," especially in eastern
             Kentucky and West Virginia, and while the ridges are not high, the
@@ -59,6 +68,7 @@ const StoriesHeader = () => {
           </div>
           <Link
             href="#"
+            data-aos="fade-right"
             className="mt-2 w-auto text-xs text-white font-semibold tracking-widest flex items-center justify-between gap-x-4 hover-link"
           >
             <span className="link link-underline link-underline-white">

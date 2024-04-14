@@ -7,7 +7,10 @@ const Capability = () => {
   return (
     <div className="w-full h-auto">
       <div className="w-full max-w-[1440px] px-[165px] py-[120px] mx-auto bg-white flex items-center justify-center">
-        <div className="flex items-center justify-center lg:flex-row flex-col gap-x-[30px] gap-y-16">
+        <div
+          className="flex items-center justify-center lg:flex-row flex-col gap-x-[30px] gap-y-16"
+          data-aos="fade-up"
+        >
           <CapabilityComponent
             icon={<ResponsiveProp />}
             title="100% Responsive"
