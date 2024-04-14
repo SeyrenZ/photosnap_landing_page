@@ -21,3 +21,4 @@ export { default as FacebookProp } from "./facebook.svg";
 export { default as FacebookWhiteProp } from "./facebook-white.svg";
 export { default as MenuProp } from "./menu.svg";
 export { default as CloseProp } from "./close.svg";
+export { default as StoriesHeaderProps } from "./stories-header-props.svg";

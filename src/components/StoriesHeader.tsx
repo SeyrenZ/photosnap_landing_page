@@ -1,14 +1,29 @@
+"use client";
 import Link from "next/link";
-import React from "react";
-import { ArrowWhiteProp } from "./svgs";
+import React, { useState } from "react";
+import { ArrowWhiteProp, StoriesHeaderProps } from "./svgs";
 
 const StoriesHeader = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
   return (
     <div className="w-full h-auto">
-      <div className="w-full h-auto  max-w-[1440px] mx-auto flex flex-col">
+      <div className="w-full h-auto  max-w-[1440px] mx-auto flex flex-col relative">
+        <StoriesHeaderProps
+          className={`absolute left-0 ${
+            isHovered ? "opacity-100" : "opacity-0"
+          } transition ease-in-out duration-700`}
+        />
         <div className="w-full sm:h-[650px] h-[317px] lg:px-[112px] px-[39px] bg-StoriesBackground bg-cover bg-no-repeat bg-center flex item-center">
           <div
-            className="w-full max-w-[380px] sm:flex hidden flex-col items-start justify-center gap-y-5 "
+            className="w-full max-w-[380px] sm:flex hidden flex-col items-start justify-center gap-y-5 relative z-10"
             data-aos="fade-right"
           >
             <div className="text-sm font-bold text-white tracking-widest">{`LAST MONTH'S FEATURED STORY`}</div>
@@ -30,9 +45,11 @@ const StoriesHeader = () => {
             </div>
             <Link
               href="#"
-              className="mt-2 w-auto text-xs text-white font-semibold tracking-widest flex items-center justify-between gap-x-4 hover-link"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              className="mt-2 w-auto text-xs text-white font-semibold tracking-widest flex items-center justify-between gap-x-4 hover-link "
             >
-              <span className="link link-underline link-underline-white">
+              <span className="link link-underline link-underline-white ">
                 READ STORIES
               </span>
               <ArrowWhiteProp />
