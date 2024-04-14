@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { ArrowWhiteProp } from "./svgs";
 
-const FeaturesBanner = () => {
+const Banner = () => {
   return (
     <div className="w-full h-auto">
       <div className="w-full h-[280px] max-w-[1440px] mx-auto lg:px-[80px] sm:px-[39px] px-[33px] bg-BannerBackground bg-cover bg-no-repeat flex items-center">
@@ -31,4 +31,4 @@ const FeaturesBanner = () => {
   );
 };
 
-export default FeaturesBanner;
+export default Banner;

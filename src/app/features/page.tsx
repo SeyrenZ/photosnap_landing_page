@@ -1,5 +1,5 @@
 "use client";
-import { FeaturesBanner, FeaturesContent, FeaturesHeader } from "@/components";
+import { Banner, FeaturesContent, FeaturesHeader } from "@/components";
 
 import React from "react";
 import { useEffect } from "react";
@@ -13,7 +13,7 @@ const Home = () => {
     <div className="pt-[72px]">
       <FeaturesHeader />
       <FeaturesContent />
-      <FeaturesBanner />
+      <Banner />
     </div>
   );
 };

@@ -12,7 +12,7 @@ const Navbar = () => {
   const links: Link[] = [
     { name: "Stories", url: "/stories" },
     { name: "Features", url: "/features" },
-    { name: "Pricing", url: "#" },
+    { name: "Pricing", url: "/pricing" },
   ];
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
