@@ -35,11 +35,17 @@ const PricingBenefitInfo: React.FC<PricingBenefit> = ({
 const PricingInfo = () => {
   return (
     <div className="w-full h-auto">
-      <div className="w-full max-w-[1440px] px-10 pb-20 mx-auto bg-white flex flex-col items-center justify-center gap-y-14 ">
-        <div className="text-[40px] leading-[48px] font-bold text-black tracking-widest">
+      <div className="w-full max-w-[1440px] px-10 pt-10 pb-40 mx-auto bg-white flex flex-col items-center justify-center gap-y-14 ">
+        <div
+          className="text-[40px] leading-[48px] font-bold text-black tracking-widest"
+          data-aos="fade-down"
+        >
           COMPARE
         </div>
-        <div className="w-full max-w-[731px] h-auto flex flex-col items-start gap-y-0">
+        <div
+          className="w-full max-w-[731px] h-auto flex flex-col items-start gap-y-0"
+          data-aos="zoom-out"
+        >
           <div className="w-full px-7 pb-5 border-b-[1px] border-black flex items-center justify-between">
             <div className="w-full max-w-[230px] text-xs font-bold text-black tracking-widest">
               THE FEATURES
