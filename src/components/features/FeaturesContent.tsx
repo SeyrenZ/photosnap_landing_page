@@ -7,8 +7,8 @@ import {
   EmbedProp,
   NoLimitProp,
   ResponsiveProp,
-} from "./svgs";
-import CapabilityComponent from "./CapabilityComponent";
+} from "../svgs";
+import CapabilityComponent from "../CapabilityComponent";
 
 const FeaturesContent = () => {
   return (

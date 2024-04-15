@@ -1,6 +1,6 @@
 "use client";
 import { Banner, PricingInfo, PricingPrice } from "@/components";
-import PricingHeader from "@/components/PricingHeader";
+import PricingHeader from "@/components/pricing/PricingHeader";
 import React from "react";
 import { useEffect } from "react";
 import Aos from "aos";

@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
-import { ArrowWhiteProp, StoriesHeaderProps } from "./svgs";
+import { ArrowWhiteProp, StoriesHeaderProps } from "../svgs";
 
 const StoriesHeader = () => {
   const [isHovered, setIsHovered] = useState(false);

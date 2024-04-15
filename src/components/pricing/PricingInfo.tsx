@@ -1,5 +1,5 @@
 import React from "react";
-import { CheckProp } from "./svgs";
+import { CheckProp } from "../svgs";
 
 interface PricingBenefit {
   title: string;

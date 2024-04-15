@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import { EmbedProp, NoLimitProp, ResponsiveProp } from "./svgs";
-import CapabilityComponent from "./CapabilityComponent";
+import { EmbedProp, NoLimitProp, ResponsiveProp } from "../svgs";
+import CapabilityComponent from "../CapabilityComponent";
 
 const Capability = () => {
   return (
