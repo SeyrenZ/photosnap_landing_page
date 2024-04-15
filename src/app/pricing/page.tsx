@@ -1,5 +1,5 @@
 "use client";
-import { Banner, PricingPrice } from "@/components";
+import { Banner, PricingInfo, PricingPrice } from "@/components";
 import PricingHeader from "@/components/PricingHeader";
 import React from "react";
 import { useEffect } from "react";
@@ -13,6 +13,7 @@ const Home = () => {
     <div className="pt-[72px]">
       <PricingHeader />
       <PricingPrice />
+      <PricingInfo />
       <Banner />
     </div>
   );

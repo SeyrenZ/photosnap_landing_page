@@ -12,3 +12,4 @@ export { default as Footer } from "./Footer";
 export { default as Navbar } from "./Navbar";
 export { default as PricingHeader } from "./PricingHeader";
 export { default as PricingPrice } from "./PricingPrice";
+export { default as PricingInfo } from "./PricingInfo";
