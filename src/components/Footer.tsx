@@ -23,10 +23,10 @@ const Footer = () => {
   };
 
   const links: Link[] = [
-    { name: "Home", url: "#" },
-    { name: "Stories", url: "#" },
-    { name: "Features", url: "#" },
-    { name: "Pricing", url: "#" },
+    { name: "Home", url: "/" },
+    { name: "Stories", url: "/stories" },
+    { name: "Features", url: "/features" },
+    { name: "Pricing", url: "/pricing" },
   ];
   return (
     <footer className="w-full h-auto py-16 bg-black">
