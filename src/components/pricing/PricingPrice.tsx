@@ -30,7 +30,7 @@ const PricingPrice = () => {
           </div>
         </div>
         <div
-          className="sm:px-10 flex lg:flex-row flex-col items-center justify-center gap-x-[30px] lg:gap-y-0 gap-y-6"
+          className="w-full sm:px-10 flex lg:flex-row flex-col items-center justify-center gap-x-[30px] lg:gap-y-0 gap-y-6"
           data-aos="zoom-out"
         >
           <div className="w-full lg:max-w-[350px] sm:max-w-[689px] max-w-[320px] lg:h-[407px] sm:h-[270px] h-[407px] lg:py-12 lg:px-9 sm:p-10 pt-14 pb-10 px-9 bg-zinc-100 transition ease-in-out duration-300 flex lg:flex-col sm:flex-row flex-col lg:items-center sm:items-start items-center justify-between">
