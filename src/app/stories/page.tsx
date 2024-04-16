@@ -3,7 +3,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="pt-[72px]">
+    <div className="pt-[72px] overflow-hidden">
       <StoriesHeader />
       <StoriesContent />
     </div>

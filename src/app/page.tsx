@@ -15,7 +15,7 @@ export default function Home() {
     Aos.init();
   }, []);
   return (
-    <main className="pt-[72px]">
+    <main className="pt-[72px] overflow-hidden">
       <HomeHeader />
       <HomeContent1 />
       <HomeContent2 />

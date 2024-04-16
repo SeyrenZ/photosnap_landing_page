@@ -10,7 +10,7 @@ const Home = () => {
     Aos.init();
   }, []);
   return (
-    <div className="pt-[72px]">
+    <div className="pt-[72px] overflow-hidden">
       <FeaturesHeader />
       <FeaturesContent />
       <Banner />
