@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { CloseProp, LogoProp, MenuProp } from "./svgs";
 import Link from "next/link";
+import { Squeeze } from "hamburger-react";
 
 const Navbar = () => {
   type Link = {
@@ -56,7 +57,7 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
-      <div className=" w-full max-w-[1440px] mx-auto px-6 md:px-[39px] lg:px-[165px] py-7 bg-white flex items-center justify-between relative z-50">
+      <div className=" w-full max-w-[1440px] mx-auto px-6 md:px-[39px] lg:px-[165px] py-7  bg-white flex items-center justify-between relative z-50">
         <Link
           href="/"
           className="sm:hover:scale-110 transition ease-in-out duration-300"
@@ -64,12 +65,8 @@ const Navbar = () => {
         >
           <LogoProp />
         </Link>
-        <div className="block sm:hidden">
-          {isMenuOpen ? (
-            <CloseProp onClick={handleMenu} />
-          ) : (
-            <MenuProp onClick={handleMenu} />
-          )}
+        <div className="absolute right-3 block sm:hidden">
+          <Squeeze toggled={isMenuOpen} toggle={setIsMenuOpen} size={20} />
         </div>
         <div className="hidden sm:block">
           <div className="flex items-center gap-x-[37px]">
